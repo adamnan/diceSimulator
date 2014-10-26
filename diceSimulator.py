@@ -10,6 +10,12 @@ dice = input.int_input("How many dice would you like to roll?")
 diceInit = 1
 
 while diceInit <= dice:
-	sides = input.int_input("How many sides on die #{}?".format(diceInit))
+	while True:
+		sides = input.int_input("How many sides on die #{}?".format(diceInit))
+		if sides < 2:
+			print("A dice should have at least two sides.")
+			continue
+		else:
+			break
 	print("The die #{} shows: {}".format(diceInit,random.randint(1,sides)))
 	diceInit +=1
