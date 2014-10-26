@@ -5,6 +5,8 @@
 import random
 import input
 
+print("This program simulates rolling several dice.\nThe user can choose how many dice are rolled.")
+
 dice = input.int_input("How many dice would you like to roll?")
 sides = input.int_input("How many sides on your die?")
 
