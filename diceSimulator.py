@@ -1,6 +1,11 @@
 import random
 import input
 
+dice = input.int_input("How many dice would you like to roll?")
 sides = input.int_input("How many sides on your die?")
 
-print("The die shows: {}".format(random.randint(1,sides)))
+diceInit = 1
+
+while diceInit <= dice:
+	print("The die #{} shows: {}".format(diceInit,random.randint(1,sides)))
+	diceInit +=1
