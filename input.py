@@ -1,3 +1,8 @@
+"""
+	This is a module written by Adam to deal with special inputs
+"""
+
+
 def int_input(sentence):
 	while True:
 		number = raw_input(sentence)
