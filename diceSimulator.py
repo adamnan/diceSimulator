@@ -1,3 +1,7 @@
+#!/usr/bin/env python
+"""
+	This is a program written by Adam used to simulate dice with different sides.
+"""
 import random
 import input
 
