@@ -1,2 +1,6 @@
 import random
-print("The die shows: {}".format(random.randint(1,6))
+import input
+
+sides = input.int_input("How many sides on your die?")
+
+print("The die shows: {}".format(random.randint(1,sides)))
